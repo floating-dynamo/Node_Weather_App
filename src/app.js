@@ -85,9 +85,8 @@ app.get("/weather", (req, res) => {
             longitude: longitude,
           };
           res.json(weather);
-        }
-        else{
-          res.json(err)
+        } else {
+          res.json(err);
         }
       }
     );
@@ -103,7 +102,7 @@ app.get("*", (req, res) => {
   });
 });
 
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server started at port " + port);
