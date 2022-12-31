@@ -1,8 +1,8 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
-const geoCode = require("../utils/geoCode");
-const getWeather = require("../utils/getWeather");
+const geoCode = require("./utils/geoCode");
+const getWeather = require("./utils/getWeather");
 
 const app = express();
 // Custom views folder
